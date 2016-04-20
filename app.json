@@ -1,0 +1,17 @@
+{
+  "name": "Facebook group post management",
+  "description": "Manage certain scheduled posts in a facebook group",
+  "env": {
+    "EMBER_ENV": {
+      "description": "Value for the Ember app to use when compiling",
+      "value": "staging"
+    },
+    "REBUILD_ALL": {
+      "description": "Boolean used to force Ember buildpack to reinstall npm and bower",
+      "value": "false"
+    }
+  },
+  "buildpacks" : [
+    { "url": "https://github.com/tonycoco/heroku-buildpack-ember-cli" }
+  ]
+}
