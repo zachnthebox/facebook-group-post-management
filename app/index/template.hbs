@@ -1,0 +1,10 @@
+<h3>Posts</h3>
+{{add-post action='addPost'}}
+<hr>
+<div class="list-group">
+  {{#each model.posts as |post|}}
+     <a class="list-group-item">
+       {{post.text}} - {{moment-format post.date 'll'}}
+     </a>
+  {{/each}}
+</div>
