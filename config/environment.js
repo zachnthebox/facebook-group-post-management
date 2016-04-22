@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'facebook-group-post-management',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://fishers-of-men-group.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -41,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.API_ENDPOINT = "https://facebook-group-post-management-api.herokuapp.com";
+
   }
 
   return ENV;
