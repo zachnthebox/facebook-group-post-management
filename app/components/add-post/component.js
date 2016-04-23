@@ -2,11 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   type: 'scripture',
+  minDate: Ember.computed(function() {
+    return new Date();
+  }),
   actions: {
     addPost() {
       let text = this.get('text');
       let type = this.get('type');
-      let date = moment(this.get('date'), 'mm/dd/yyyy').toDate();
+      let date = this.get('date');
       if (!text || !date) {
         alert('bad inputs');
         return;

@@ -6,5 +6,8 @@
   <label>Type</label>
   {{input class="form-control" value=type readonly=true}}
 </div>
-{{sl-date-picker label='Post Date' value=date}}
+<div class="form-group">
+  <label>Post Date</label>
+  {{pikaday-input class="form-control pikaday" value=date format="MM/DD/YYYY" readonly="readonly" minDate=minDate}}
+</div>
 <button class="btn btn-default" {{action 'addPost'}}>Add Post</button>
