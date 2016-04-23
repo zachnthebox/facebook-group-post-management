@@ -18,6 +18,7 @@ export default Ember.Component.extend(Validations, {
   createNewPost() {
     this.set('post', {
       type: 'scripture',
+      pending: true,
     });
   },
   isFormValid: Ember.computed.alias('validations.isValid'),

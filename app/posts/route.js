@@ -3,7 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
-      posts: this.get('store').findAll('post'),
+      posts: this.get('store').query('post', {
+        orderBy: 'pending',
+        equalTo: true,
+      }),
     });
   },
   actions: {

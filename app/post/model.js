@@ -5,4 +5,5 @@ export default Model.extend({
   type: attr('string'),
   text: attr('string'),
   date: attr('date'),
+  pending: attr('boolean'),
 });
