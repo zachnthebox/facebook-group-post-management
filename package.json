@@ -42,8 +42,10 @@
     "ember-moment": "6.1.0",
     "ember-pikaday": "1.1.0",
     "ember-resolver": "^2.0.3",
+    "ember-route-action-helper": "0.3.1",
     "emberfire": "1.6.6",
     "loader.js": "^4.0.0",
-    "moment-format": "1.2.8"
+    "moment-format": "1.2.8",
+    "route-action": "1.0.0"
   }
 }
