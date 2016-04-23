@@ -13,4 +13,4 @@
   {{pikaday-input class="form-control pikaday" value=post.date format="MM/DD/YYYY" readonly="readonly" minDate=minDate}}
   <small class="text-muted">{{v-get this 'post.date' 'message'}}</small>
 </div>
-<button class="btn btn-default" {{action 'addPost'}}>Add Post</button>
+{{bs-button style='primary' disabled=disabled click=(action 'addPost') text='Add Post'}}

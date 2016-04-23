@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import { validator, buildValidations } from 'ember-cp-validations';
-import moment from 'moment';
 
 const Validations = buildValidations({
   'post.text': validator('presence', true),
