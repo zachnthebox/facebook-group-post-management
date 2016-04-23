@@ -1,3 +1,6 @@
+
+[![Circle CI](https://circleci.com/gh/zachnthebox/facebook-group-post-management.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/zachnthebox/facebook-group-post-management)
+
 # Facebook-group-post-management
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
