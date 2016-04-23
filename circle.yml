@@ -8,4 +8,5 @@ dependencies:
     - bower i
 test:
   override:
+    - npm rebuild node-sass
     - ember test
