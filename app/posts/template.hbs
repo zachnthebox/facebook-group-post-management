@@ -1,13 +1,23 @@
 <h3>Facebook Post Schedule</h3>
-{{add-post action='addPost'}}
-<hr>
-<div class="list-group">
-  {{#each model.posts as |post|}}
-     <a class="list-group-item clearfix">
-      {{post.text}} - Posts {{moment-from-now post.date}}
-      <div class="pull-xs-right">
-        {{bs-button style='danger' text='Delete' click=(route-action 'deletePost' post)}}
-      </div>
-     </a>
-  {{/each}}
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    {{add-post action='addPost'}}
+    <hr class="hidden-lg-up">
+  </div>
+  <div class="col-lg-6">
+    <div class="list-group">
+      {{#each model.posts as |post|}}
+        <a class="list-group-item">
+          <div class="pull-xs-right">
+            {{bs-button style='danger' text='Delete' click=(route-action 'deletePost' post)}}
+          </div>
+          <strong class="text-uppercase">{{post.type}}</strong> <i>posts {{moment-format post.date 'dddd, MMMM DD'}}</i>
+          <br>
+          {{post.text}}
+          <div class="clearfix"></div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
 </div>
