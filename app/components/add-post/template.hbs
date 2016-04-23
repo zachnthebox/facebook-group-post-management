@@ -1,13 +1,16 @@
 <div class="form-group">
   <label>Text</label>
-  {{input class="form-control" value=text}}
+  {{input class="form-control" value=post.text}}
+  <small class="text-muted">{{v-get this 'post.text' 'message'}}</small>
 </div>
 <div class="form-group">
   <label>Type</label>
-  {{input class="form-control" value=type readonly=true}}
+  {{input class="form-control" value=post.type readonly=true}}
+  <small class="text-muted">{{v-get this 'post.type' 'message'}}</small>
 </div>
 <div class="form-group">
   <label>Post Date</label>
-  {{pikaday-input class="form-control pikaday" value=date format="MM/DD/YYYY" readonly="readonly" minDate=minDate}}
+  {{pikaday-input class="form-control pikaday" value=post.date format="MM/DD/YYYY" readonly="readonly" minDate=minDate}}
+  <small class="text-muted">{{v-get this 'post.date' 'message'}}</small>
 </div>
 <button class="btn btn-default" {{action 'addPost'}}>Add Post</button>
