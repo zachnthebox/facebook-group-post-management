@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'facebook-group-post-management',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://fishers-of-men-group.firebaseio.com/',
+    firebase: 'https://fishers-of-men-dev.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
