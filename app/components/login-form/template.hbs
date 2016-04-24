@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label>Email</label>
+  {{input class='form-control' value=user.email}}
+  <small class="text-muted">{{v-get this 'user.email' 'message'}}</small>
+</div>
+<div class="form-group">
+  <label>Password</label>
+  {{input type='password' class='form-control' value=user.password}}
+  <small class="text-muted">{{v-get this 'user.password' 'message'}}</small>
+</div>
+{{bs-button disabled=disabled style='primary' click=(action 'login' user) text='Login'}}

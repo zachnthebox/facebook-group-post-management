@@ -10,6 +10,7 @@
     "moment": "~2.10.3",
     "moment-timezone": "~0.4.0",
     "firebase": "^2.1.0",
-    "pikaday": "^1.4.0"
+    "pikaday": "^1.4.0",
+    "ember-simple-auth": "0.8.0"
   }
 }
