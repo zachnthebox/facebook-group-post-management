@@ -43,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.firebase = 'https://fishers-of-men-group.firebaseio.com/';
   }
 
   return ENV;
